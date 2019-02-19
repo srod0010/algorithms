@@ -15,5 +15,5 @@ class Fibonacci
   end
 end
 
-test = Fibonacci.new
-puts test.fibonacci(100);
+# test = Fibonacci.new
+# puts test.fibonacci(5);
