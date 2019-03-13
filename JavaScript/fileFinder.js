@@ -12,6 +12,17 @@ function fileFinder(directories, targetFile) {
     return false;
 }
 
+
+// function fileFinder1(directories, targetFile) {
+//     for (key in directories) {
+//         if (key === targetFile || fileFinder1(directories[key], targetFile)) {
+//             return true;
+//         }
+//     }
+
+//     return false;
+// }
+
 let desktop = {
     '/images': {
         'app_academy_logo.svg': null,
@@ -41,6 +52,6 @@ let desktop = {
         }
     }
 };
-console.log(fileFinder(desktop, 'app_academy_logo.svg')); // => true
-console.log(fileFinder(desktop, 'everlong.flac')); // => true
-console.log(fileFinder(desktop, 'sequoia.jpeg')); // => false
+console.log(fileFinder1(desktop, 'app_academy_logo.svg')); // => true
+console.log(fileFinder1(desktop, 'everlong.flac')); // => true
+console.log(fileFinder1(desktop, 'sequoia.jpeg')); // => false
